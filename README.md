@@ -1,7 +1,7 @@
 # SpringBoot-ORM-PostgreSQL
 
 A **Spring Boot 3.0.1** project demonstrating **Object-Relational Mapping (ORM)** with **JPA/Hibernate** and **PostgreSQL**.  
-Exposes a REST API with **Spring Web** and **HATEOAS**, including validation and CRUD operations for mapped entities.
+Exposes a REST API with **Spring Web**, including validation and CRUD operations for mapped entities.
 
 ---
 
@@ -9,7 +9,6 @@ Exposes a REST API with **Spring Web** and **HATEOAS**, including validation and
 - 🔄 Object-Relational Mapping with **Spring Data JPA / Hibernate**
 - 🗄️ Persistence to **PostgreSQL**
 - 🌐 RESTful API with **Spring Web**
-- ➕ Hypermedia controls via **Spring HATEOAS**
 - ✅ Validation with **Hibernate Validator**
 - ⚡ Developer hot reload with **Spring Boot DevTools**
 - 🧪 Unit/integration tests with **Spring Boot Starter Test**
@@ -21,7 +20,7 @@ Exposes a REST API with **Spring Web** and **HATEOAS**, including validation and
 - **Framework:** Spring Boot 3.0.1  
 - **ORM:** Hibernate (via Spring Data JPA)  
 - **Database:** PostgreSQL  
-- **API:** REST + HATEOAS  
+- **API:** REST
 - **Build Tool:** Maven (with wrapper)  
 
 ---
