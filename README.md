@@ -27,6 +27,7 @@ Exposes a REST API with **Spring Web** and **HATEOAS**, including validation and
 ---
 
 ## Project Structure
+```text
 src/main/java/
 └─ orm/com/orm/ # Base package (adjust to your actual code)
 ├─ entity/ # @Entity classes mapped to DB tables
@@ -34,7 +35,7 @@ src/main/java/
 ├─ controller/ # REST controllers (@RestController)
 ├─ service/ # Business logic (if present)
 └─ OrmApplication.java # @SpringBootApplication entry point
-
+```
 ---
 ## Setup
 
@@ -52,6 +53,7 @@ CREATE DATABASE ormdb;
 3. Configuration
 
 Edit src/main/resources/application.properties with your local credentials:
+```java
   spring.datasource.url=jdbc:postgresql://localhost:5432/ormdb
   spring.datasource.username=postgres
   spring.datasource.password=YOUR_PASSWORD
@@ -60,12 +62,15 @@ Edit src/main/resources/application.properties with your local credentials:
   spring.jpa.hibernate.ddl-auto=update   # dev only; use migrations in prod
   spring.jpa.show-sql=true
   spring.jpa.properties.hibernate.format_sql=true
-
+```
 4. Build & Run
+```bash
   ./mvnw spring-boot:run
-
+```
 Application starts on:
   http://localhost:8080
 
 Tests
+```bash
 ./mvnw test
+```
